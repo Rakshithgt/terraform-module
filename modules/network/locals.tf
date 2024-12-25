@@ -1,7 +1,7 @@
 locals {
   DeployedBy = "Terraform"
-  Owner      = "India-Dev-Team"
-  Costcenter = "INDIA-8080"
-  TeamDL     = "saikiran.p01@logicsystem.com"
+  Owner      = "bng-Team"
+  Costcenter = "bng-01"
+  TeamDL     = "rakshithgt222@gmail.com"
 }
 

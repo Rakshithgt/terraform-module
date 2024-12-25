@@ -13,6 +13,6 @@ terraform {
   backend "s3" {
     bucket = "workspacesbucket25122024"
     key    = "dev-modules.tfstate"
-    region = "ap-south-a"
+    region = "ap-south-1"
   }
 }
