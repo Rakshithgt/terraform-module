@@ -13,6 +13,6 @@ terraform {
   backend "s3" {
     bucket = "sreeterraformbucket"
     key    = "production-modules.tfstate"
-    region = "us-east-1"
+    region = "ap-south-1"
   }
 }

@@ -2,12 +2,12 @@ module "dev_compute_1" {
   source      = "../modules/compute"
   environment = module.dev_vpc_1.environment
   amis = {
-    us-east-1 = "ami-04505e74c0741db8d" # ubuntu 20.04 LTS
-    us-east-2 = "ami-04505e74c0741db90" # ubuntu 20.04 LTS
+    ap-south-1 = "ami-053b12d3152c0cc71" # ubuntu 20.04 LTS
+    
   }
   aws_region           = var.aws_region
   instance_type        = "t2.nano"
-  key_name             = "Latest"
+  key_name             = "mumbai"
   iam_instance_profile = module.dev_iam_1.instprofile
   public_subnets       = module.dev_vpc_1.public_subnets_id
   private_subnets      = module.dev_vpc_1.private_subnets_id
@@ -40,6 +40,6 @@ module "dev_elb_1_public" {
 module "dev_iam_1" {
   source              = "../modules/iam"
   environment         = module.dev_vpc_1.environment
-  rolename            = "SaiTMRole"
-  instanceprofilename = "SaiTMinstprofile"
+  rolename            = "RakshithTMRole"
+  instanceprofilename = "rakshithgtMinstprofile"
 }
